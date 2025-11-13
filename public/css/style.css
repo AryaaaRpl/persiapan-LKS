@@ -1,0 +1,93 @@
+.navbar {
+ position: fixed !important;
+ top: 20px;
+ left: 50%;
+ transform: translateX(-50%);
+ z-index: 9999;
+ display: flex !important;
+ justify-content: center !important;
+ flex-wrap: wrap;
+}
+
+.navbar {
+    box-shadow: 5px 5px 5px 5px solid black ;
+}
+
+
+
+.nav-link:active {
+    color: white;
+}
+
+.desc {
+    max-width: 500px;
+}
+.title {
+    font-weight: bold;
+}
+
+.container {
+    padding-top: 135px;
+}
+
+.home-image {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    animation: float 4s ease-in-out infinite;
+}
+
+.blob-1 {
+    width: 300px;
+    height: 300px;
+    filter: blur(10px);
+    position: absolute;
+    z-index: -80;
+}
+
+.blob-2 {
+    width: 500px;
+    height: 500px;
+    filter: blur(10px);
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateY(200px);
+    z-index: -80;
+}
+
+.card-wrapper {
+    display: flex;
+    justify-content: center;
+    gap:8px;
+    flex-wrap: wrap;
+}
+
+.arrow-elements {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    right: 100px;
+    transform: rotateZ(160deg);
+}
+
+
+.img {
+    filter: drop-shadow(5px 10px 5px black);
+    overflow: hidden;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
