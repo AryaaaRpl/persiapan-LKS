@@ -9,33 +9,7 @@
 </head>
 <body>
     <!-- navbar -->
-    <div class="navbar gap-2">
-<ul class="nav nav-pills nav-fill gap-2 p-1 small bg-primary rounded-5 shadow-sm" id="pillNav2" role="tablist" style="--bs-nav-link-color: var(--bs-white); --bs-nav-pills-link-active-color: var(--bs-primary); --bs-nav-pills-link-active-bg: var(--bs-white);">
-  <li class="nav-item" role="presentation">
-    <a href="#" class="nav-link link active rounded-5" id="home-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="true">Home</a>
-  </li>
-  <li class="nav-item" role="presentation">
-    <a href="#profile" class="nav-link link rounded-5" id="profile-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">About</a>
-  </li>
-  <li class="nav-item" role="presentation">
-    <a href="#detail" class="nav-link rounded-5" id="detail-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Details</a>
-  </li>
-   <li class="nav-item" role="presentation">
-    <a href="#blog" class="nav-link rounded-5" id="blog-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Blog</a>
-  </li>
-  <li class="nav-item" role="presentation">
-    <a href="#contact" class="nav-link rounded-5" id="contact-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Contact</a>
-  </li>
-</ul>
-<ul class="nav nav-pills nav-fill gap-2 p-1 small bg-primary rounded-5 shadow-sm" id="pillNav2" role="tablist" style="--bs-nav-link-color: var(--bs-white); --bs-nav-pills-link-active-color: var(--bs-primary); --bs-nav-pills-link-active-bg: var(--bs-white);">
-  <li class="nav-item" role="presentation">
-    <a class="nav-link active rounded-5 d-flex gap-2 items-center" id="login-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="true">login <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z"/>
-  <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>
-</svg></span></a>
-  </li>
-</ul>
-</div>
+  @include("layouts.navbar")
 <!-- home -->
 <section id="home">
   <!-- background blob 1 -->
@@ -45,12 +19,9 @@
 </svg>
       </div>
 <div class="container">
-   
-      
         <div class="row"> 
           <div class="d-flex justify-between">
-          <div class="col"> 
-           
+          <div class="col home-layout"> 
     <h1 class="title">Accounting</h1>
     <div class="decoration d-flex items-center">
     <span class="badge rounded-pill text-bg-primary items-center">it's all matters</span> <img style="width:25px;" src="/assets/5.png" alt=""></div>
@@ -61,7 +32,6 @@
 </svg>
 </svg></a>
     </div>
-    
     <div class="home-image">
       <img src="/assets/1.png" alt="">
     </div>
@@ -76,9 +46,19 @@
     </div>
     <!-- card  -->
       <div class="card-wrapper">
-  <div class="card" style="width: 25rem;">
+  <div class="card custom-card" style="width: 25rem;">
     <img src="/assets/2.png" alt="" class="card-image-top img">
-    <div class="card-body bg-primary text-white">
+    <div class="card-body text-white">
+      <h3 class="card-title">How to grow on A Business</h3>
+      <span class="badges rounded-pill text-bg-success placeholder">Business Strategy</span>
+      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, temporibus.</p>
+      <a href="#" class="btn btn-warning text-white rounded-pill">Show more</a>
+    </div>
+  </div>
+
+  <div class="card custom-card" style="width: 25rem;">
+    <img src="/assets/2.png" alt="" class="card-image-top img">
+    <div class="card-body  text-white">
       <h3 class="card-title">How to grow on A Business</h3>
       <span class="badges rounded-pill text-bg-success">Business Strategy</span>
       <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, temporibus.</p>
@@ -86,19 +66,9 @@
     </div>
   </div>
 
-  <div class="card" style="width: 25rem;">
+  <div class="card custom-card" style="width: 25rem;">
     <img src="/assets/2.png" alt="" class="card-image-top img">
-    <div class="card-body bg-primary text-white">
-      <h3 class="card-title">How to grow on A Business</h3>
-      <span class="badges rounded-pill text-bg-success">Business Strategy</span>
-      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, temporibus.</p>
-      <a href="#" class="btn btn-warning text-white rounded-pill">Show more</a>
-    </div>
-  </div>
-
-  <div class="card" style="width: 25rem;">
-    <img src="/assets/2.png" alt="" class="card-image-top img">
-    <div class="card-body bg-primary text-white">
+    <div class="card-body  text-white">
       <h3 class="card-title">How to grow on A Business</h3>
       <span class="badges rounded-pill text-bg-success">Business Strategy</span>
       <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, temporibus.</p>
@@ -109,7 +79,7 @@
 
 </section>
 
-<section id="profile" class="min-h-screen">
+<section id="about" class="min-h-screen">
       
         <div class="container">
         <div class="row">
@@ -130,6 +100,115 @@
         </div>
       </div>
       </div>
+      </div>
+    </div>
+    <div class="arrow gap-2">
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1"/>
+</svg>
+<span>Scroll Down</span>
+</div>
+</section>
+
+<section id="details" class="min-h-screen">
+      <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="text-center">
+            <div class="details-wrapper">
+            <h1 class="title">Details</h1>
+            <p class="why">Why Accounting Is Important?</p>
+            <div class="card-wrapper-detail">
+            <div class="detail-card">
+              <div class="detail-logo">
+                <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-bar-chart-line-fill" viewBox="0 0 16 16">
+  <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1z"/>
+</svg>
+</div>
+              </div>
+              <div class="detail-text">
+                <div class="text">
+                  <h1>Stonks</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus cum architecto assumenda deleniti perspiciatis ex recusandae distinctio quis, ratione ea.</p>
+              </div>
+              </div>
+            </div>
+            <div class="card-wrapper-detail">
+            <div class="detail-card">
+              <div class="detail-logo">
+                <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-align-middle" viewBox="0 0 16 16">
+  <path d="M6 13a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zM1 8a.5.5 0 0 0 .5.5H6v-1H1.5A.5.5 0 0 0 1 8m14 0a.5.5 0 0 1-.5.5H10v-1h4.5a.5.5 0 0 1 .5.5"/>
+</svg>
+</div>
+              </div>
+              <div class="detail-text">
+                <div class="text">
+                  <h1>Stable</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus cum architecto assumenda deleniti perspiciatis ex recusandae distinctio quis, ratione ea.</p>
+              </div>
+              </div>
+            </div>
+            <div class="card-wrapper-detail">
+            <div class="detail-card">
+              <div class="detail-logo">
+                <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-cash-coin" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8m5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0"/>
+  <path d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195z"/>
+  <path d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083q.088-.517.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1z"/>
+  <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 6 6 0 0 1 3.13-1.567"/>
+</svg>
+</div>
+              </div>
+              <div class="detail-text">
+                <div class="text">
+                  <h1>Profit</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus cum architecto assumenda deleniti perspiciatis ex recusandae distinctio quis, ratione ea.</p>
+              </div>
+              </div>
+            </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+</section>
+
+<section id="contact" class="min-h-screen contact">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="intro">
+             <h1>Contact</h1>
+             <p>Contact Me If You Wanna Learn!!</p>
+          </div>
+          <div class="d-flex form-contact justify-between">
+          <div class="form">
+            <div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Your Name</label>
+  <input type="text" class="form-control max-w-100" id="exampleFormControlInput1" placeholder="Your Name">
+</div>
+  <div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">No. Telp</label>
+  <input type="number" class="form-control max-w-100" id="exampleFormControlInput1" placeholder="ex: +6212345678">
+</div>
+  <div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Email address</label>
+  <input type="email" class="form-control max-w-100" id="exampleFormControlInput1" placeholder="name@example.com">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Your Message</label>
+  <textarea class="form-control max-w-150" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
+ <button class="btn btn-primary">Submit</button>
+</div>
+<img src="/assets/7.png" alt="">
+          </div>
+         
+        </div>
       </div>
     </div>
 </section>
